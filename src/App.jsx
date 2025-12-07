@@ -5,32 +5,17 @@ import {
 } from 'lucide-react';
 
 // Custom Logo (Play Button)
-const StrekzzzLogo = ({ className = "" }) => (
-  <svg
-    viewBox="0 0 100 100"
-    width="150"
-    height="150"
-    className={className}
-    xmlns="http://www.w3.org/2000/svg"
-    xmlnsXlink="http://www.w3.org/1999/xlink"
-  >
-    <defs>
-      <clipPath id="strekzzzCircleClip">
-        <circle cx="50" cy="50" r="48" />
-      </clipPath>
-    </defs>
 
-    <image
-      xlinkHref="/image1.jpeg"
-      x="-20"
-      y="-20"
-      width="140"
-      height="140"
-      clipPath="url(#strekzzzCircleClip)"
-      preserveAspectRatio="xMidYMid slice"
+const StrekzzzLogo = ({ className = "" }) => (
+  <div className={`rounded-full overflow-hidden ${className}`}>
+    <img
+      src="/image1.jpeg"
+      alt="Strekzzz Logo"
+      className="w-full h-full object-cover"
     />
-  </svg>
+  </div>
 );
+
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -238,7 +223,7 @@ const App = () => {
         <footer id="about" className="bg-white rounded-3xl p-8 md:p-12 border border-gray-100 text-center">
            <div className="flex flex-col items-center gap-6">
              <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center">
-               <StrekzzzLogo className="w-8 h-8"/>
+               <StrekzzzLogo className="w-16 h-16"/>
              </div>
              <h2 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tighter">
                STREKZZZ<span className="text-blue-600">.</span>
