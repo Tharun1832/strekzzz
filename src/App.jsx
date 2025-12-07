@@ -3,13 +3,14 @@ import {
   Instagram, Play, Zap, Menu, X, ArrowUpRight, Phone, 
   Bike, Heart, Building2, Video, Camera, ArrowRight, MessageCircle
 } from 'lucide-react';
+import logo from "../src/assets/logo.jpeg"
 
 // Custom Logo (Play Button)
 
 const StrekzzzLogo = ({ className = "" }) => (
   <div className={`rounded-full overflow-hidden ${className}`}>
     <img
-      src="/image1.jpeg"
+      src={logo}
       alt="Strekzzz Logo"
       className="w-full h-full object-cover"
     />
