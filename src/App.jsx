@@ -12,7 +12,8 @@ const StrekzzzLogo = ({ className = "" }) => (
     <img
       src={logo}
       alt="Strekzzz Logo"
-      className="w-full h-full object-cover"
+      className="object-cover"
+      height={20}
     />
   </div>
 );
@@ -33,7 +34,7 @@ const App = () => {
         <div className="bg-white/80 backdrop-blur-xl border border-white/20 shadow-lg shadow-gray-200/50 rounded-full px-6 py-3 flex justify-between items-center">
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo(0,0)}>
             <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
-              <StrekzzzLogo className="w-5 h-5" />
+              <StrekzzzLogo />
             </div>
             <span className="font-bold text-lg tracking-tight">Strekzzz.</span>
           </div>
