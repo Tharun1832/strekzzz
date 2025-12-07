@@ -5,26 +5,28 @@ import {
 } from 'lucide-react';
 
 // Custom Logo (Play Button)
-const StrekzzzLogo = ({ className }) => (
+const StrekzzzLogo = ({ className = "" }) => (
   <svg
     viewBox="0 0 100 100"
     width="150"
     height="150"
     className={className}
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
   >
     <defs>
-      <clipPath id="circleClip">
+      <clipPath id="strekzzzCircleClip">
         <circle cx="50" cy="50" r="48" />
       </clipPath>
     </defs>
 
     <image
-      href="/image1.jpeg"
-      x="-20"    // shift left to zoom
-      y="-20"    // shift up to zoom
-      width="140"  // zoom in
-      height="140" // zoom in
-      clipPath="url(#circleClip)"
+      xlinkHref="/image1.jpeg"
+      x="-20"
+      y="-20"
+      width="140"
+      height="140"
+      clipPath="url(#strekzzzCircleClip)"
       preserveAspectRatio="xMidYMid slice"
     />
   </svg>
